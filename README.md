@@ -3,7 +3,7 @@ r2cloud python sdk makes it easier for you to work with your r2cloud server usin
 
 ## Installation 
 
-#### with pip
+#### with pip3
 
 ```sh
 pip install r2cloud
