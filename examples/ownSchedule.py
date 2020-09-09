@@ -52,7 +52,7 @@ station.freshAuth()
 # start observing
 mysh.immediatelyStart()
 
-print("wait for end " + mypass[0].strftime("%m/%d/%Y, %H:%M:%S"))
+print("wait for end " + mypass[2].strftime("%m/%d/%Y, %H:%M:%S"))
 
 wait_until(mypass[2])
 
