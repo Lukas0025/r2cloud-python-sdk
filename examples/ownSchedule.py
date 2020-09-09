@@ -45,7 +45,7 @@ mypass = passes[0]
 
 print("wait for start " + mypass[0].strftime("%m/%d/%Y, %H:%M:%S"))
 
-wait_until(mypass[0])
+wait_until(mypass[0]) # start time
 
 # fresh auth token
 station.freshAuth()
@@ -54,7 +54,11 @@ mysh.immediatelyStart()
 
 print("wait for end " + mypass[2].strftime("%m/%d/%Y, %H:%M:%S"))
 
-wait_until(mypass[2])
+wait_until(mypass[2]) # max elevation time
+
+print("max elevation point")
+
+wait_until(mypass[1]) # end time
 
 # fresh auth token
 station.freshAuth()
