@@ -13,12 +13,12 @@ class observation:
     # @param dict       dict_observation - dict of obeservation
     # @param api object api              - instance of api for server with observation
     def __init__(self, dict_observation, api):
-        self.id                      = dict_observation["id"]
-        self.satellite               = dict_observation["satellite"]
+        self.id                      = int(dict_observation["id"])
+        self.satellite               = int(dict_observation["satellite"])
         self.start                   = datetime.fromtimestamp(dict_observation["start"] / 1000)
         self.end                     = datetime.fromtimestamp(dict_observation["end"]   / 1000)
         self.sampleRate              = dict_observation["sampleRate"]
-        self.inputSampleRate         = dict_observation["inputSampleRate"]
+        self.inputSampleRate         = dict_observation["inputSampleRate"])
         self.frequency               = dict_observation["frequency"]
         self.actualFrequency         = dict_observation["actualFrequency"]
         self.decoder                 = dict_observation["decoder"]
