@@ -20,6 +20,7 @@ make doc # for generate documentation
 
 ```python
 import r2cloud.api
+import r2cloud.tools.common
 
 # init api
 station = r2cloud.api('https://192.168.0.10')
