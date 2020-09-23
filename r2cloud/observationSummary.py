@@ -12,7 +12,7 @@ class observationSummary:
     # @param dict       dict_observation - dict of obeservationSummary
     # @param api object api              - instance of api for server with observation
     def __init__(self, dict_observation, api):
-        self.id           = dict_observation["id"]
+        self.id           = int(dict_observation["id"])
         self.satelliteId  = int(dict_observation["satelliteId"])
         self.name         = dict_observation["name"]
         self.start        = datetime.fromtimestamp(dict_observation["start"] / 1000)
