@@ -21,6 +21,7 @@ setuptools.setup(
     ],
     python_requires='>=3.0',
     install_requires=[
-        'httpx'
+        'httpx',
+        'pyorbital'
     ],
 )
