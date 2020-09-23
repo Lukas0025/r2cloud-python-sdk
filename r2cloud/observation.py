@@ -18,7 +18,7 @@ class observation:
         self.start                   = datetime.fromtimestamp(dict_observation["start"] / 1000)
         self.end                     = datetime.fromtimestamp(dict_observation["end"]   / 1000)
         self.sampleRate              = dict_observation["sampleRate"]
-        self.inputSampleRate         = dict_observation["inputSampleRate"])
+        self.inputSampleRate         = dict_observation["inputSampleRate"]
         self.frequency               = dict_observation["frequency"]
         self.actualFrequency         = dict_observation["actualFrequency"]
         self.decoder                 = dict_observation["decoder"]

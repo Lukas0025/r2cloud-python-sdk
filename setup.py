@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="r2cloud",
-    version="0.0.2",
+    version="0.0.3",
     author="Lukáš Plevač",
     author_email="lukasplevac@gmail.com",
     description="python SDK for R2CLOUD",
